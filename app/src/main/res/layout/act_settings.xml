@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <TableLayout android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow android:layout_marginTop="8dp"
+                android:layout_marginBottom="4dp">
+                <TextView
+                    style="@style/SettingTitle"
+                    android:text="@string/notiche"
+                    android:layout_width="0dip"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1" />
+
+                <ToggleButton
+                    android:id="@+id/switch1"
+                    android:background="@drawable/toggle_switch"
+                    android:layout_width="50dp"
+                    android:layout_height="22dp"
+                    android:textOn=""
+                    android:textOff=""
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:layout_marginRight="15dp">
+                </ToggleButton>
+            </TableRow>
+
+
+
+            <TableRow android:layout_marginTop="8dp"
+                android:layout_marginBottom="4dp">
+                <TextView
+                    style="@style/SettingTitle"
+                    android:text="@string/timer"
+                    android:layout_width="0dip"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1" />
+
+
+                <ToggleButton
+                    android:id="@+id/switch2"
+                    android:background="@drawable/toggle_switch"
+                    android:layout_width="50dp"
+                    android:layout_height="22dp"
+                    android:textOn=""
+                    android:textOff=""
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:layout_marginRight="15dp">
+                </ToggleButton>
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="8dp">
+
+                <TextView
+                      style="@style/SettingTitle"
+                      android:text="@string/allarme"
+                      android:layout_gravity="center_vertical"
+                      android:layout_width="0dip"
+                      android:layout_weight="1"
+                    android:layout_marginLeft="10dp" />
+
+
+                <ToggleButton
+                      android:id="@+id/switch3"
+                      android:background="@drawable/toggle_switch"
+                      android:layout_width="50dp"
+                      android:layout_height="22dp"
+                      android:textOn=""
+                      android:textOff=""
+                      android:focusable="false"
+                      android:focusableInTouchMode="false"
+                    android:layout_marginRight="15dp">
+                </ToggleButton>
+
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="4dp">
+
+                <TextView
+                    style="@style/SettingTitle"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/attivo"
+                    android:layout_width="0dip"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp" />
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="4dp">
+
+                <TextView
+                    style="@style/SettingTitle"
+                    android:id="@+id/login"
+                    android:text="@string/sincronizza"
+                    android:layout_width="0dip"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="8dp">
+
+                <TextView
+                    style="@style/SettingTitle"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/elimina"
+                    android:layout_marginLeft="10dp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="4dp">
+
+                <TextView
+                    style="@style/SettingTitle"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/avatar"
+                    android:layout_marginLeft="10dp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="8dp">
+
+                <TextView
+                    style="@style/SettingTitle"
+                    android:id="@+id/disconnetti"
+                    android:text="@string/disconnetti"
+                    android:layout_marginLeft="10dp" />
+            </TableRow>
+
+        </TableLayout>
+
+
+    </LinearLayout>

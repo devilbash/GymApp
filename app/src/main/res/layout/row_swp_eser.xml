@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+    <LinearLayout
+        android:id="@+id/back"
+        android:tag="back"
+        style="@style/ListBackContent"
+        android:weightSum="1">
+
+        <mcs.gymapp.view.digitalclock.CronometroView
+            android:id="@+id/cronometro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="0.33" />
+
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:id="@+id/front"
+        android:tag="front"
+        style="@style/ListFrontContent">
+
+        <ImageView
+            android:id="@+id/image"
+            style="@style/ListImage"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/nomeEser"
+            style="@style/ListTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/image"
+            android:layout_toEndOf="@+id/image"
+            android:layout_marginLeft="20dp" />
+
+        <TextView
+            android:id="@+id/nSerie"
+            style="@style/ListDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/image"
+            android:layout_below="@+id/nomeEser" />
+
+        <TextView
+            android:id="@+id/numero"
+            style="@style/ListDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="x"
+            android:layout_toRightOf="@+id/nSerie"
+            android:layout_toEndOf="@+id/image"
+            android:layout_alignTop="@+id/nSerie"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp" />
+
+        <TextView
+            android:id="@+id/nRip"
+            style="@style/ListDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/numero"
+            android:layout_alignTop="@+id/numero" />
+
+    </RelativeLayout>
+
+</FrameLayout>
